@@ -2,7 +2,7 @@
 A program to type personalized symbols.
 
 You can create your own keyboard shortcuts writing them down at shortcuts.txt file. This file must comply with the following structure (example in quotes):
-"[Category name 1]`n
+"[Category name 1]
 1: 'input1' → 'output1'
 1: 'input2' → 'output2'
 1: 'input3' → 'output3'
