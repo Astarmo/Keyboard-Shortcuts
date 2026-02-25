@@ -1,18 +1,15 @@
 # Atajos-de-teclado
-A program to type personalized symbols.
+Un programa para escribir símbolos personalizados.
 
-You can create your own keyboard shortcuts writing them down at shortcuts.txt file. This file must comply with the following structure (example in quotes):
-"[Category name 1]
-1: 'input1' → 'output1'
-1: 'input2' → 'output2'
-1: 'input3' → 'output3'
+Puede crear sus propios atajos de teclado añadiéndolos a un archivo "atajos.txt" (ver archivo de ejemplo).
 
-[Category name 1]
-1: 'input4' → 'output4'"
-...and so on.
-This will make for example that every time user types "input1" it will write "output1". This is useful to type characters that are not in regular keyboards (for example, the program is loaded by default with shortcuts for math notation).
+Ambos archivos "Atajos de teclado.exe" y "atajos txt" deben estar en una misma carpeta.
 
-Both "KeyboardShortcuts.exe" and "shortcuts.txt" must be in the same folder.
+Observaciones:
+• Dado que el programa no está firmado digitalmente, Windows le mostrará un aviso si intenta ejecutarlo. Puede ejecutarlo dando click en "Más información" y luego "Ejecutar de todas formas".
 
-Some clarifications:
-- If some active "inputA" is a prefix o some other active "inputB", the user must write "inputA " (with space) for it to distinguish between inputA and inputB. Example: if "'1' -> 'one'" and "'10' -> 'ten'" both active, the user must type "1 " for it to become "one".
+• Si existe una entrada activa A prefijo de otra entrada activa B se deberá escribir la entrada A con un espacio al final para obtener la salida A. Ejemplo: si '1' -> 'uno' y '10' -> 'diez' están activos, se deberá escribir "1 " (con espacio al final) para obtener "uno".
+
+• Si la casilla "Autoencendido" está activa, el programa se iniciará al encender el sistema.
+
+• El programa corre los atajos en segundo plano, es decir que el programa sigue activo aún habiendo cerrado la ventana del programa. Para cerrarlo completamente debe hacerlo desde la sección de íconos ocultos en la barra de tareas.
